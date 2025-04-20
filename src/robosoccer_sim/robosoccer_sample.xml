@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<mujoco model="robosoccer_sample">
+  <!-- Minimal MuJoCo model: replace with real robot later -->
+  <worldbody>
+    <body name="torso" pos="0 0 0.5">
+      <geom type="sphere" size="0.1" rgba="0.2 0.2 0.8 1"/>
+    </body>
+  </worldbody>
+</mujoco>

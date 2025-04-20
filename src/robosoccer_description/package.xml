@@ -1,0 +1,8 @@
+<package format="3">
+  <name>robosoccer_description</name>
+  <version>0.0.1</version>
+  <description>URDF and meshes for RoboSoccer</description>
+  <maintainer email="YOUR_EMAIL">YOUR_NAME</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+</package>

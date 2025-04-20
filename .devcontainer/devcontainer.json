@@ -1,0 +1,16 @@
+{
+  "name": "robosoccer-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-iot.vscode-ros",
+    "ms-python.python",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "sudo apt update && sudo apt install -y mujoco libmujoco-dev && pip install mujoco && colcon build --symlink-install",
+  "remoteUser": "vscode"
+}

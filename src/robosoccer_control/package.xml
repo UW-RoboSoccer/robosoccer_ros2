@@ -1,0 +1,11 @@
+<package format="3">
+  <name>robosoccer_control</name>
+  <version>0.0.1</version>
+  <description>Biped controller node for RoboSoccer</description>
+  <maintainer email="YOUR_EMAIL">YOUR_NAME</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+</package>
