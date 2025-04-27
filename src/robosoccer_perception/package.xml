@@ -8,4 +8,7 @@
   <exec_depend>rclpy</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>adafruit-circuitpython-bno085x</exec_depend>
+  <exec_depend>adafruit-extended-bus</exec_depend>
+  <exec_depend>RPi.GPIO</exec_depend>
 </package>
