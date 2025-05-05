@@ -1,3 +1,5 @@
+make a new branch for each pacakge
+
 # RoboSoccer ROS 2 Workspace
 
 This repository is a full ROS 2 Humble workspace for the RoboCup Humanoid KidSize project, supporting both hardware and MuJoCo-based simulation.
