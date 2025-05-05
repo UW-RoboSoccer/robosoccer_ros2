@@ -6,7 +6,7 @@ This repository is a full ROS 2 Humble workspace for the RoboCup Humanoid KidSiz
 
 ---
 
-## 🏗️ Workspace Structure
+##  Structure
 
 ```
 robosoccer_ros2/
@@ -29,7 +29,7 @@ robosoccer_ros2/
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ### 1. **Native (Ubuntu 22.04 + ROS 2 Humble)**
 
@@ -56,7 +56,7 @@ source install/setup.bash
 
 ---
 
-## 🕹️ Running Simulation
+## Running Simulation
 
 To launch the MuJoCo simulation node:
 ```sh
@@ -70,7 +70,7 @@ ros2 launch robosoccer_bringup full_system.launch.py
 
 ---
 
-## 📦 Package Overview
+## Package Overview
 
 - `robosoccer_sim`: MuJoCo simulation node and model
 - `robosoccer_behavior`, `robosoccer_control`, ...: Core robot nodes
@@ -79,23 +79,9 @@ ros2 launch robosoccer_bringup full_system.launch.py
 
 ---
 
-## 🧑‍💻 Development Tips
+## Development
 
-- Use the devcontainer for a reproducible environment
+- Use the devcontainer for a reproducible environment (will setup eventually)
 - Add your MuJoCo model to `robosoccer_sim/robosoccer_sample.xml`
 - Extend nodes with real logic and hardware integration
 - For custom messages, see [ROS 2 custom interface tutorial](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Custom-ROS2-Interfaces.html)
-
----
-
-## 🤖 Credits
-
-Built for RoboCup Humanoid League 2024.
-
----
-
-## 🆘 Troubleshooting
-
-- If you see `ModuleNotFoundError`, check your build and sourcing
-- For MuJoCo issues, ensure `mujoco` and `libmujoco-dev` are installed
-- For ROS 2 errors, check dependencies in each `package.xml`
