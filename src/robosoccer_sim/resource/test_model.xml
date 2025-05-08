@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<mujoco model="test">
+  <compiler angle="radian" eulerseq="zyx"/>
+  
+  <default>
+    <joint damping="1" armature="0.1"/>
+    <geom type="box" size="0.1 0.1 0.1" rgba="0.8 0.8 0.8 1"/>
+  </default>
+
+  <worldbody>
+    <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1"/>
+    <geom type="plane" size="1 1 0.1" rgba=".9 .9 .9 1"/>
+    
+    <body name="base" pos="0 0 0.2">
+      <joint name="free" type="free"/>
+      <geom type="box" size="0.1 0.1 0.1" rgba="0.8 0.2 0.2 1"/>
+      
+      <body name="arm" pos="0 0 0.2">
+        <joint name="joint1" type="hinge" axis="0 0 1"/>
+        <geom type="box" size="0.05 0.05 0.2" rgba="0.2 0.8 0.2 1"/>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <position name="joint1_ctrl" joint="joint1" forcelimited="true" ctrlrange="-3.14 3.14"/>
+  </actuator>
+
+  <sensor>
+    <framepos name="base_pos" objtype="body" objname="base"/>
+    <framequat name="base_quat" objtype="body" objname="base"/>
+    <framelinvel name="base_vel" objtype="body" objname="base"/>
+    <frameangvel name="base_ang_vel" objtype="body" objname="base"/>
+  </sensor>
+</mujoco> 
